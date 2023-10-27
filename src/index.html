@@ -3,13 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.min.css" />
     <title>Bootstrap w/ Vite</title>
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
+    <div class="container">
+      <h1>Drum Pad</h1>
+      <div class="drum-pad" id="pad1" data-sound="sound1.mp3">Q</div>
+      <div class="drum-pad" id="pad2" data-sound="sound2.mp3">W</div>
+      <div class="drum-pad" id="pad3" data-sound="sound3.mp3">E</div>
     </div>
+    <audio
+      id="clicSound"
+      src="./mixkit-cartoon-laugh-voice-2882.wav"
+      style="display: none"
+    ></audio>
     <script type="module" src="../src/js/main.js"></script>
   </body>
 </html>
